@@ -1,0 +1,17 @@
+D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitter.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter9
+-- Compiling module sequenceDetector
+-- Compiling module serialTransmitter
+
+Top level modules:
+	serialTransmitter
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module serialTransmitterTB
+
+Top level modules:
+	serialTransmitterTB
+
+} {} {}}

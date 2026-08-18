@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/University/Semester4/DLDLab/HWs/3/Codes/2
+vhard_block
+Z0 !s110 1780418744
+!i10b 1
+!s100 2Ac]7zVO<5ICHKBRRFO^c0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[1<GiKeiaVnZ;nSMU<]o;3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim
+Z4 w1780418403
+Z5 8D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3.vo
+Z6 FD:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3.vo
+!i122 0
+L0 759 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1780418744.000000
+Z9 !s107 D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vtopLevel
+R0
+!i10b 1
+!s100 @D4[H[Go0^]ePNO5:iK?Z1
+R1
+IXGZaj=XQmViN=a:i5C3gJ3
+R2
+R3
+R4
+R5
+R6
+!i122 0
+L0 32 726
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+ntop@level
+vtopLevelTB
+!s110 1780420198
+!i10b 1
+!s100 k_`SjMG<<FAXZdHmAfCVG2
+R1
+IAK2Pjb^g7`e4n=aO6>FYM2
+R2
+R3
+w1780420183
+8D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v
+FD:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v
+!i122 3
+L0 3 67
+R7
+r1
+!s85 0
+31
+!s108 1780420198.000000
+!s107 D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v|
+!i113 1
+R11
+R12
+ntop@level@t@b

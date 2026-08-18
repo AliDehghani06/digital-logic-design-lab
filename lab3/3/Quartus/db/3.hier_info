@@ -1,0 +1,88 @@
+|topLevel
+clk => clk.IN2
+rst => rst.IN2
+clkPB => clkPB.IN1
+serIn => serIn.IN1
+serOutvalid <= serialTransmitter:u_transmitter.serOutvalid
+count_out[0] <= serialTransmitter:u_transmitter.count_out
+count_out[1] <= serialTransmitter:u_transmitter.count_out
+count_out[2] <= serialTransmitter:u_transmitter.count_out
+count_out[3] <= serialTransmitter:u_transmitter.count_out
+serOut <= serialTransmitter:u_transmitter.serOut
+
+
+|topLevel|onePulser:u_onePulser
+clk => q2.CLK
+clk => q1.CLK
+clk => q0.CLK
+rst => q2.ACLR
+rst => q1.ACLR
+rst => q0.ACLR
+clkPB => q0.DATAIN
+clkEn <= clkEn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|topLevel|serialTransmitter:u_transmitter
+clk => clk.IN2
+rst => rst.IN2
+clkEn => clkEn.IN2
+serIn => serIn.IN1
+serOutvalid <= sequenceDetector:seqDetect_inst.serOutvalid
+count_out[0] <= counter9:counter_inst.count
+count_out[1] <= counter9:counter_inst.count
+count_out[2] <= counter9:counter_inst.count
+count_out[3] <= counter9:counter_inst.count
+serOut <= serOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|topLevel|serialTransmitter:u_transmitter|counter9:counter_inst
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clkEn => count[0]~reg0.ENA
+clkEn => count[3]~reg0.ENA
+clkEn => count[2]~reg0.ENA
+clkEn => count[1]~reg0.ENA
+rst => count[0]~reg0.ACLR
+rst => count[1]~reg0.ACLR
+rst => count[2]~reg0.ACLR
+rst => count[3]~reg0.ACLR
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => count.OUTPUTSELECT
+en => co.IN1
+rst_cnt => count.OUTPUTSELECT
+rst_cnt => count.OUTPUTSELECT
+rst_cnt => count.OUTPUTSELECT
+rst_cnt => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|topLevel|serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst
+clk => state~5.DATAIN
+rst => state~7.DATAIN
+clkEn => state.OUTPUTSELECT
+clkEn => state.OUTPUTSELECT
+clkEn => state.OUTPUTSELECT
+clkEn => state.OUTPUTSELECT
+clkEn => state.OUTPUTSELECT
+serIn => Selector1.IN2
+serIn => Selector2.IN3
+serIn => rst_cnt.DATAB
+serIn => Selector0.IN1
+serIn => Selector0.IN2
+serIn => next_state.S2.DATAB
+serIn => next_state.S3.DATAB
+co => Selector0.IN4
+co => Selector2.IN1
+rst_cnt <= rst_cnt.DB_MAX_OUTPUT_PORT_TYPE
+countEn <= serOutvalid.DB_MAX_OUTPUT_PORT_TYPE
+serOutvalid <= serOutvalid.DB_MAX_OUTPUT_PORT_TYPE
+
+

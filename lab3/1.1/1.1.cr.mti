@@ -1,0 +1,15 @@
+D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulserTB.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulserTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module onePulserTB
+
+Top level modules:
+	onePulserTB
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulser.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulser.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module onePulser
+
+Top level modules:
+	onePulser
+
+} {} {}}

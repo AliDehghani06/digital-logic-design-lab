@@ -1,0 +1,130 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/University/Semester4/DLDLab/HWs/3/Codes/1.2
+vcircuitTB
+Z0 !s110 1780405327
+!i10b 1
+!s100 4Z>>W4GhDVzbi1PEW`CI:3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IP[_nGOzRSa_46WR:7SdJ73
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/University/Semester4/DLDLab/HWs/3/Codes/2
+w1780405319
+8D:/University/Semester4/DLDLab/HWs/3/Codes/2/circuitTB.v
+FD:/University/Semester4/DLDLab/HWs/3/Codes/2/circuitTB.v
+!i122 0
+L0 3 65
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1780405327.000000
+!s107 D:/University/Semester4/DLDLab/HWs/3/Codes/2/circuitTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/2/circuitTB.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+ncircuit@t@b
+vcounter9
+R0
+!i10b 1
+!s100 cH<N@9RWW6bS[GG[HHgJz3
+R1
+I_aH6Q>T1FbC^5N[i^ge6z1
+R2
+R3
+Z8 w1780399980
+Z9 8D:/University/Semester4/DLDLab/HWs/3/Codes/2/serialTransmitter.v
+Z10 FD:/University/Semester4/DLDLab/HWs/3/Codes/2/serialTransmitter.v
+!i122 2
+L0 1 22
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/University/Semester4/DLDLab/HWs/3/Codes/2/serialTransmitter.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/2/serialTransmitter.v|
+!i113 1
+R6
+R7
+vonePulser
+R0
+!i10b 1
+!s100 A@[QP5bz1ggCJBdGVY[Fl0
+R1
+I[aecXb<i665I=dV6FFK0j2
+R2
+R3
+w1780384548
+8D:/University/Semester4/DLDLab/HWs/3/Codes/2/onePulser.v
+FD:/University/Semester4/DLDLab/HWs/3/Codes/2/onePulser.v
+!i122 1
+L0 1 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/University/Semester4/DLDLab/HWs/3/Codes/2/onePulser.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/2/onePulser.v|
+!i113 1
+R6
+R7
+none@pulser
+vsequenceDetector
+R0
+!i10b 1
+!s100 6g5ALK8TQ3PJ_Ge86]3<A2
+R1
+IVdlMm]Re9_[A:l[Y9Xh2]0
+R2
+R3
+R8
+R9
+R10
+!i122 2
+L0 24 49
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 D:/University/Semester4/DLDLab/HWs/3/Codes/2/serialTransmitter.v|
+R11
+!i113 1
+R6
+R7
+nsequence@detector
+vserialTransmitter
+R0
+!i10b 1
+!s100 41_<dZo^7VS_C6I>JU5V]2
+R1
+I2Pm:n5^zS0<m^5MIKgOWB3
+R2
+R3
+R8
+R9
+R10
+!i122 2
+L0 74 35
+R4
+r1
+!s85 0
+31
+R5
+R12
+R11
+!i113 1
+R6
+R7
+nserial@transmitter

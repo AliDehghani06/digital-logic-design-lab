@@ -1,0 +1,939 @@
+Timing Analyzer report for 3
+Tue Jun 02 20:10:02 2026
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 125C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 125C Model Setup Summary
+  8. Slow 1200mV 125C Model Hold Summary
+  9. Slow 1200mV 125C Model Recovery Summary
+ 10. Slow 1200mV 125C Model Removal Summary
+ 11. Slow 1200mV 125C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 125C Model Setup: 'clk'
+ 13. Slow 1200mV 125C Model Hold: 'clk'
+ 14. Slow 1200mV 125C Model Metastability Summary
+ 15. Slow 1200mV -40C Model Fmax Summary
+ 16. Slow 1200mV -40C Model Setup Summary
+ 17. Slow 1200mV -40C Model Hold Summary
+ 18. Slow 1200mV -40C Model Recovery Summary
+ 19. Slow 1200mV -40C Model Removal Summary
+ 20. Slow 1200mV -40C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV -40C Model Setup: 'clk'
+ 22. Slow 1200mV -40C Model Hold: 'clk'
+ 23. Slow 1200mV -40C Model Metastability Summary
+ 24. Fast 1200mV -40C Model Setup Summary
+ 25. Fast 1200mV -40C Model Hold Summary
+ 26. Fast 1200mV -40C Model Recovery Summary
+ 27. Fast 1200mV -40C Model Removal Summary
+ 28. Fast 1200mV -40C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV -40C Model Setup: 'clk'
+ 30. Fast 1200mV -40C Model Hold: 'clk'
+ 31. Fast 1200mV -40C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv n40c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 125c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv n40c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Input Ports
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Input Ports
+ 47. Unconstrained Output Ports
+ 48. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; 3                                                   ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE6E22A7                                         ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.05        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.5%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 125C Model Fmax Summary                                                                       ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 446.03 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++--------------------------------------+
+; Slow 1200mV 125C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; clk   ; -1.242 ; -9.457              ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Slow 1200mV 125C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; clk   ; 0.410 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Slow 1200mV 125C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 125C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Slow 1200mV 125C Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------------------+
+; Clock ; Slack  ; End Point TNS                     ;
++-------+--------+-----------------------------------+
+; clk   ; -3.000 ; -19.357                           ;
++-------+--------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 125C Model Setup: 'clk'                                                                                                                                                                                                ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                ; To Node                                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.242 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.146      ;
+; -1.242 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.146      ;
+; -1.241 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.145      ;
+; -1.238 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.142      ;
+; -1.238 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.142      ;
+; -1.237 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.141      ;
+; -1.234 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.503     ; 1.728      ;
+; -1.230 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.503     ; 1.724      ;
+; -1.190 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.094      ;
+; -1.186 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.093     ; 2.090      ;
+; -1.053 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.503     ; 1.547      ;
+; -0.988 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.892      ;
+; -0.988 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.892      ;
+; -0.987 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.891      ;
+; -0.946 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.850      ;
+; -0.943 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.864      ;
+; -0.943 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.864      ;
+; -0.943 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.864      ;
+; -0.943 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.864      ;
+; -0.915 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.819      ;
+; -0.915 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.819      ;
+; -0.914 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.818      ;
+; -0.909 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.830      ;
+; -0.909 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.830      ;
+; -0.909 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.830      ;
+; -0.909 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.830      ;
+; -0.907 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.503     ; 1.401      ;
+; -0.874 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.205      ;
+; -0.874 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.205      ;
+; -0.874 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.205      ;
+; -0.874 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.205      ;
+; -0.863 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.093     ; 1.767      ;
+; -0.724 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.055      ;
+; -0.724 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.055      ;
+; -0.724 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.055      ;
+; -0.724 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.055      ;
+; -0.714 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.045      ;
+; -0.714 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.045      ;
+; -0.714 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.045      ;
+; -0.714 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.045      ;
+; -0.683 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.014      ;
+; -0.683 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.014      ;
+; -0.683 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.014      ;
+; -0.683 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.334      ; 2.014      ;
+; -0.441 ; onePulser:u_onePulser|q1                                                 ; onePulser:u_onePulser|q2                                                 ; clk          ; clk         ; 1.000        ; -0.075     ; 1.363      ;
+; -0.295 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.216      ;
+; -0.236 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.076     ; 1.157      ;
+; -0.052 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.076     ; 0.973      ;
+; -0.041 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.076     ; 0.962      ;
+; -0.038 ; onePulser:u_onePulser|q0                                                 ; onePulser:u_onePulser|q1                                                 ; clk          ; clk         ; 1.000        ; -0.075     ; 0.960      ;
+; 0.110  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.076     ; 0.811      ;
+; 0.158  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.076     ; 0.763      ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 125C Model Hold: 'clk'                                                                                                                                                                                                ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                ; To Node                                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.410 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.692      ;
+; 0.410 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.692      ;
+; 0.410 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.692      ;
+; 0.411 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.693      ;
+; 0.427 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.076      ; 0.692      ;
+; 0.443 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.076      ; 0.708      ;
+; 0.595 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.076      ; 0.860      ;
+; 0.601 ; onePulser:u_onePulser|q0                                                 ; onePulser:u_onePulser|q1                                                 ; clk          ; clk         ; 0.000        ; 0.075      ; 0.865      ;
+; 0.605 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.076      ; 0.870      ;
+; 0.613 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.503      ; 1.305      ;
+; 0.673 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.955      ;
+; 0.680 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.962      ;
+; 0.690 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.972      ;
+; 0.690 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.093      ; 0.972      ;
+; 0.690 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.076      ; 0.955      ;
+; 0.736 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.076      ; 1.001      ;
+; 0.902 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.503      ; 1.594      ;
+; 0.902 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.503      ; 1.594      ;
+; 0.903 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.503      ; 1.595      ;
+; 1.022 ; onePulser:u_onePulser|q1                                                 ; onePulser:u_onePulser|q2                                                 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.286      ;
+; 1.157 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.439      ;
+; 1.253 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.535      ;
+; 1.259 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.541      ;
+; 1.347 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.629      ;
+; 1.348 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.039      ;
+; 1.348 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.039      ;
+; 1.348 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.039      ;
+; 1.348 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.039      ;
+; 1.358 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.640      ;
+; 1.387 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.078      ;
+; 1.387 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.078      ;
+; 1.387 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.078      ;
+; 1.387 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.502      ; 2.078      ;
+; 1.447 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.334     ; 1.302      ;
+; 1.460 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.503      ; 2.152      ;
+; 1.460 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.503      ; 2.152      ;
+; 1.460 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.503      ; 2.152      ;
+; 1.460 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.503      ; 2.152      ;
+; 1.497 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.779      ;
+; 1.497 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.779      ;
+; 1.524 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.334     ; 1.379      ;
+; 1.537 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.093      ; 1.819      ;
+; 1.603 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.867      ;
+; 1.603 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.867      ;
+; 1.603 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.867      ;
+; 1.603 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.867      ;
+; 1.654 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.918      ;
+; 1.654 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.918      ;
+; 1.654 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.918      ;
+; 1.654 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.075      ; 1.918      ;
+; 1.731 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.334     ; 1.586      ;
+; 1.739 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.334     ; 1.594      ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+------------------------------------------------
+; Slow 1200mV 125C Model Metastability Summary ;
+------------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV -40C Model Fmax Summary                                                                       ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 517.87 MHz ; 250.0 MHz       ; clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------+
+; Slow 1200mV -40C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; clk   ; -0.931 ; -6.767              ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Slow 1200mV -40C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; clk   ; 0.328 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Slow 1200mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Slow 1200mV -40C Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------------------+
+; Clock ; Slack  ; End Point TNS                     ;
++-------+--------+-----------------------------------+
+; clk   ; -3.000 ; -17.135                           ;
++-------+--------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV -40C Model Setup: 'clk'                                                                                                                                                                                                ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                ; To Node                                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.931 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.452     ; 1.479      ;
+; -0.926 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.452     ; 1.474      ;
+; -0.868 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.790      ;
+; -0.868 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.790      ;
+; -0.868 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.790      ;
+; -0.865 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.787      ;
+; -0.865 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.787      ;
+; -0.865 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.787      ;
+; -0.825 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.747      ;
+; -0.822 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.744      ;
+; -0.810 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.452     ; 1.358      ;
+; -0.734 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.656      ;
+; -0.734 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.656      ;
+; -0.734 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.656      ;
+; -0.713 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.650      ;
+; -0.713 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.650      ;
+; -0.713 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.650      ;
+; -0.713 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.650      ;
+; -0.701 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.623      ;
+; -0.670 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.452     ; 1.218      ;
+; -0.666 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.603      ;
+; -0.666 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.603      ;
+; -0.666 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.603      ;
+; -0.666 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.603      ;
+; -0.604 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.526      ;
+; -0.604 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.526      ;
+; -0.604 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.526      ;
+; -0.580 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.891      ;
+; -0.580 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.891      ;
+; -0.580 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.891      ;
+; -0.580 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.891      ;
+; -0.561 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.078     ; 1.483      ;
+; -0.475 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.786      ;
+; -0.475 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.786      ;
+; -0.475 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.786      ;
+; -0.475 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.786      ;
+; -0.458 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.769      ;
+; -0.458 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.769      ;
+; -0.458 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.769      ;
+; -0.458 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.769      ;
+; -0.428 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.739      ;
+; -0.428 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.739      ;
+; -0.428 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.739      ;
+; -0.428 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.311      ; 1.739      ;
+; -0.268 ; onePulser:u_onePulser|q1                                                 ; onePulser:u_onePulser|q2                                                 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.205      ;
+; -0.080 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.063     ; 1.017      ;
+; -0.037 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.063     ; 0.974      ;
+; 0.102  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.063     ; 0.835      ;
+; 0.114  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.063     ; 0.823      ;
+; 0.118  ; onePulser:u_onePulser|q0                                                 ; onePulser:u_onePulser|q1                                                 ; clk          ; clk         ; 1.000        ; -0.063     ; 0.819      ;
+; 0.254  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.063     ; 0.683      ;
+; 0.299  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.063     ; 0.638      ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV -40C Model Hold: 'clk'                                                                                                                                                                                                ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                ; To Node                                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.328 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.574      ;
+; 0.328 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.574      ;
+; 0.328 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.574      ;
+; 0.342 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.588      ;
+; 0.343 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.574      ;
+; 0.395 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.626      ;
+; 0.502 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.122      ;
+; 0.514 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.745      ;
+; 0.529 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.760      ;
+; 0.529 ; onePulser:u_onePulser|q0                                                 ; onePulser:u_onePulser|q1                                                 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.760      ;
+; 0.587 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.833      ;
+; 0.591 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.837      ;
+; 0.602 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.833      ;
+; 0.603 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.849      ;
+; 0.604 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.078      ; 0.850      ;
+; 0.635 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.063      ; 0.866      ;
+; 0.768 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.388      ;
+; 0.768 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.388      ;
+; 0.769 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.389      ;
+; 0.887 ; onePulser:u_onePulser|q1                                                 ; onePulser:u_onePulser|q2                                                 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.118      ;
+; 1.020 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.266      ;
+; 1.083 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.329      ;
+; 1.104 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.350      ;
+; 1.133 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.753      ;
+; 1.133 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.753      ;
+; 1.133 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.753      ;
+; 1.133 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.753      ;
+; 1.147 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.393      ;
+; 1.187 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.807      ;
+; 1.187 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.807      ;
+; 1.187 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.807      ;
+; 1.187 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.807      ;
+; 1.200 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.446      ;
+; 1.245 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.865      ;
+; 1.245 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.865      ;
+; 1.245 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.865      ;
+; 1.245 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.452      ; 1.865      ;
+; 1.259 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.311     ; 1.116      ;
+; 1.269 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.515      ;
+; 1.269 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.515      ;
+; 1.323 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.311     ; 1.180      ;
+; 1.333 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.078      ; 1.579      ;
+; 1.369 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.600      ;
+; 1.369 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.600      ;
+; 1.369 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.600      ;
+; 1.369 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.600      ;
+; 1.423 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.654      ;
+; 1.423 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.654      ;
+; 1.423 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.654      ;
+; 1.423 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.063      ; 1.654      ;
+; 1.509 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.311     ; 1.366      ;
+; 1.513 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.311     ; 1.370      ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+------------------------------------------------
+; Slow 1200mV -40C Model Metastability Summary ;
+------------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++--------------------------------------+
+; Fast 1200mV -40C Model Setup Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; clk   ; -0.020 ; -0.054              ;
++-------+--------+---------------------+
+
+
++-------------------------------------+
+; Fast 1200mV -40C Model Hold Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; clk   ; 0.171 ; 0.000               ;
++-------+-------+---------------------+
+
+
+-------------------------------------------
+; Fast 1200mV -40C Model Recovery Summary ;
+-------------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast 1200mV -40C Model Removal Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------+
+; Fast 1200mV -40C Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------------------+
+; Clock ; Slack  ; End Point TNS                     ;
++-------+--------+-----------------------------------+
+; clk   ; -3.000 ; -14.747                           ;
++-------+--------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV -40C Model Setup: 'clk'                                                                                                                                                                                                ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                ; To Node                                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.020 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.229     ; 0.779      ;
+; -0.019 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.229     ; 0.778      ;
+; -0.012 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.957      ;
+; -0.011 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.956      ;
+; -0.011 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.956      ;
+; -0.011 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.956      ;
+; -0.010 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.955      ;
+; -0.010 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.955      ;
+; 0.003  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.942      ;
+; 0.004  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.941      ;
+; 0.097  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.229     ; 0.662      ;
+; 0.107  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.846      ;
+; 0.107  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.846      ;
+; 0.107  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.846      ;
+; 0.107  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.846      ;
+; 0.120  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.825      ;
+; 0.121  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.824      ;
+; 0.121  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.824      ;
+; 0.124  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.229     ; 0.635      ;
+; 0.132  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.813      ;
+; 0.133  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.812      ;
+; 0.133  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.812      ;
+; 0.133  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.820      ;
+; 0.133  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.820      ;
+; 0.133  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.820      ;
+; 0.133  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.820      ;
+; 0.135  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.810      ;
+; 0.147  ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; -0.043     ; 0.798      ;
+; 0.158  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.981      ;
+; 0.158  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.981      ;
+; 0.158  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.981      ;
+; 0.158  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.981      ;
+; 0.219  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.920      ;
+; 0.219  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.920      ;
+; 0.219  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.920      ;
+; 0.219  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.920      ;
+; 0.220  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.919      ;
+; 0.220  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.919      ;
+; 0.220  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.919      ;
+; 0.220  ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.919      ;
+; 0.246  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.893      ;
+; 0.246  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.893      ;
+; 0.246  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.893      ;
+; 0.246  ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 1.000        ; 0.151      ; 0.893      ;
+; 0.353  ; onePulser:u_onePulser|q1                                                 ; onePulser:u_onePulser|q2                                                 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.600      ;
+; 0.413  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.540      ;
+; 0.439  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.514      ;
+; 0.521  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.432      ;
+; 0.521  ; onePulser:u_onePulser|q0                                                 ; onePulser:u_onePulser|q1                                                 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.432      ;
+; 0.531  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.422      ;
+; 0.596  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.357      ;
+; 0.618  ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 1.000        ; -0.035     ; 0.335      ;
++--------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV -40C Model Hold: 'clk'                                                                                                                                                                                                ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                                                ; To Node                                                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.171 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.296      ;
+; 0.171 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.296      ;
+; 0.171 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.296      ;
+; 0.175 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.300      ;
+; 0.179 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.296      ;
+; 0.183 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.300      ;
+; 0.245 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.556      ;
+; 0.247 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.364      ;
+; 0.249 ; onePulser:u_onePulser|q0                                                 ; onePulser:u_onePulser|q1                                                 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.366      ;
+; 0.254 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.371      ;
+; 0.282 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.407      ;
+; 0.287 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.412      ;
+; 0.292 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.417      ;
+; 0.292 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.417      ;
+; 0.294 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.411      ;
+; 0.311 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.428      ;
+; 0.376 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.687      ;
+; 0.377 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.688      ;
+; 0.377 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.688      ;
+; 0.415 ; onePulser:u_onePulser|q1                                                 ; onePulser:u_onePulser|q2                                                 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.532      ;
+; 0.493 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.618      ;
+; 0.527 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.652      ;
+; 0.535 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.660      ;
+; 0.568 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.879      ;
+; 0.568 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.879      ;
+; 0.568 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.879      ;
+; 0.568 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.879      ;
+; 0.569 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.694      ;
+; 0.581 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.892      ;
+; 0.581 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.892      ;
+; 0.581 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.892      ;
+; 0.581 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.892      ;
+; 0.604 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.729      ;
+; 0.609 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.920      ;
+; 0.609 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.920      ;
+; 0.609 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.920      ;
+; 0.609 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; clk          ; clk         ; 0.000        ; 0.229      ; 0.920      ;
+; 0.621 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.151     ; 0.552      ;
+; 0.651 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.776      ;
+; 0.652 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.777      ;
+; 0.652 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|counter9:counter_inst|count[2]           ; clk          ; clk         ; 0.000        ; 0.043      ; 0.777      ;
+; 0.683 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[3]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.151     ; 0.614      ;
+; 0.693 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.810      ;
+; 0.693 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.810      ;
+; 0.693 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.810      ;
+; 0.693 ; onePulser:u_onePulser|q2                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.810      ;
+; 0.706 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.823      ;
+; 0.706 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S1 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.823      ;
+; 0.706 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S3 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.823      ;
+; 0.706 ; onePulser:u_onePulser|q1                                                 ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S2 ; clk          ; clk         ; 0.000        ; 0.035      ; 0.823      ;
+; 0.746 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[1]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.151     ; 0.677      ;
+; 0.748 ; serialTransmitter:u_transmitter|counter9:counter_inst|count[0]           ; serialTransmitter:u_transmitter|sequenceDetector:seqDetect_inst|state.S4 ; clk          ; clk         ; 0.000        ; -0.151     ; 0.679      ;
++-------+--------------------------------------------------------------------------+--------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+------------------------------------------------
+; Fast 1200mV -40C Model Metastability Summary ;
+------------------------------------------------
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 1
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 0.628 ns
+
+
+
+
++------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                          ;
++------------------+--------+-------+----------+---------+---------------------+
+; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.242 ; 0.171 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -1.242 ; 0.171 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -9.457 ; 0.0   ; 0.0      ; 0.0     ; -19.357             ;
+;  clk             ; -9.457 ; 0.000 ; N/A      ; N/A     ; -19.357             ;
++------------------+--------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; serOutvalid   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; count_out[0]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; count_out[1]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; count_out[2]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; count_out[3]  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; serOut        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; serIn                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; rst                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clkPB                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv n40c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; serOutvalid   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.4 V               ; -0.0195 V           ; 0.196 V                              ; 0.023 V                              ; 2.87e-10 s                  ; 3.09e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.4 V              ; -0.0195 V          ; 0.196 V                             ; 0.023 V                             ; 2.87e-10 s                 ; 3.09e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.4e-09 V                    ; 2.4 V               ; -0.0306 V           ; 0.178 V                              ; 0.087 V                              ; 2.81e-10 s                  ; 2.95e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.4e-09 V                   ; 2.4 V              ; -0.0306 V          ; 0.178 V                             ; 0.087 V                             ; 2.81e-10 s                 ; 2.95e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.4 V               ; -0.0195 V           ; 0.196 V                              ; 0.023 V                              ; 2.87e-10 s                  ; 3.09e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.4 V              ; -0.0195 V          ; 0.196 V                             ; 0.023 V                             ; 2.87e-10 s                 ; 3.09e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.4 V               ; -0.0195 V           ; 0.196 V                              ; 0.023 V                              ; 2.87e-10 s                  ; 3.09e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.4 V              ; -0.0195 V          ; 0.196 V                             ; 0.023 V                             ; 2.87e-10 s                 ; 3.09e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.4 V               ; -0.0195 V           ; 0.196 V                              ; 0.023 V                              ; 2.87e-10 s                  ; 3.09e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.4 V              ; -0.0195 V          ; 0.196 V                             ; 0.023 V                             ; 2.87e-10 s                 ; 3.09e-10 s                 ; Yes                       ; Yes                       ;
+; serOut        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.4e-09 V                    ; 2.4 V               ; -0.0306 V           ; 0.178 V                              ; 0.087 V                              ; 2.81e-10 s                  ; 2.95e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.4e-09 V                   ; 2.4 V              ; -0.0306 V          ; 0.178 V                             ; 0.087 V                             ; 2.81e-10 s                 ; 2.95e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-09 V                   ; 2.39 V              ; -0.0798 V           ; 0.13 V                               ; 0.103 V                              ; 2.71e-10 s                  ; 2.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-09 V                  ; 2.39 V             ; -0.0798 V          ; 0.13 V                              ; 0.103 V                             ; 2.71e-10 s                 ; 2.5e-10 s                  ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.64e-09 V                   ; 2.39 V              ; -0.00331 V          ; 0.132 V                              ; 0.006 V                              ; 4.59e-10 s                  ; 5.62e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.64e-09 V                  ; 2.39 V             ; -0.00331 V         ; 0.132 V                             ; 0.006 V                             ; 4.59e-10 s                 ; 5.62e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 125c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; serOutvalid   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.32e-06 V                   ; 2.35 V              ; -0.0124 V           ; 0.057 V                              ; 0.05 V                               ; 4.87e-10 s                  ; 5.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.32e-06 V                  ; 2.35 V             ; -0.0124 V          ; 0.057 V                             ; 0.05 V                              ; 4.87e-10 s                 ; 5.02e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.91e-06 V                   ; 2.35 V              ; -0.00923 V          ; 0.127 V                              ; 0.041 V                              ; 4.74e-10 s                  ; 4.81e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.91e-06 V                  ; 2.35 V             ; -0.00923 V         ; 0.127 V                             ; 0.041 V                             ; 4.74e-10 s                 ; 4.81e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.32e-06 V                   ; 2.35 V              ; -0.0124 V           ; 0.057 V                              ; 0.05 V                               ; 4.87e-10 s                  ; 5.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.32e-06 V                  ; 2.35 V             ; -0.0124 V          ; 0.057 V                             ; 0.05 V                              ; 4.87e-10 s                 ; 5.02e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.32e-06 V                   ; 2.35 V              ; -0.0124 V           ; 0.057 V                              ; 0.05 V                               ; 4.87e-10 s                  ; 5.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.32e-06 V                  ; 2.35 V             ; -0.0124 V          ; 0.057 V                             ; 0.05 V                              ; 4.87e-10 s                 ; 5.02e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.32e-06 V                   ; 2.35 V              ; -0.0124 V           ; 0.057 V                              ; 0.05 V                               ; 4.87e-10 s                  ; 5.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.32e-06 V                  ; 2.35 V             ; -0.0124 V          ; 0.057 V                             ; 0.05 V                              ; 4.87e-10 s                 ; 5.02e-10 s                 ; Yes                       ; Yes                       ;
+; serOut        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.91e-06 V                   ; 2.35 V              ; -0.00923 V          ; 0.127 V                              ; 0.041 V                              ; 4.74e-10 s                  ; 4.81e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.91e-06 V                  ; 2.35 V             ; -0.00923 V         ; 0.127 V                             ; 0.041 V                             ; 4.74e-10 s                 ; 4.81e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.33e-06 V                   ; 2.35 V              ; -0.00598 V          ; 0.095 V                              ; 0.012 V                              ; 4.54e-10 s                  ; 3.98e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.33e-06 V                  ; 2.35 V             ; -0.00598 V         ; 0.095 V                             ; 0.012 V                             ; 4.54e-10 s                 ; 3.98e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.86e-06 V                   ; 2.34 V              ; -0.00776 V          ; 0.107 V                              ; 0.033 V                              ; 6.63e-10 s                  ; 8.55e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.86e-06 V                  ; 2.34 V             ; -0.00776 V         ; 0.107 V                             ; 0.033 V                             ; 6.63e-10 s                 ; 8.55e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv n40c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; serOutvalid   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.18e-09 V                   ; 2.74 V              ; -0.0527 V           ; 0.162 V                              ; 0.083 V                              ; 2.61e-10 s                  ; 2.44e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.18e-09 V                  ; 2.74 V             ; -0.0527 V          ; 0.162 V                             ; 0.083 V                             ; 2.61e-10 s                 ; 2.44e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[0]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.24e-09 V                   ; 2.76 V              ; -0.0537 V           ; 0.17 V                               ; 0.079 V                              ; 2.61e-10 s                  ; 2.39e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.24e-09 V                  ; 2.76 V             ; -0.0537 V          ; 0.17 V                              ; 0.079 V                             ; 2.61e-10 s                 ; 2.39e-10 s                 ; No                        ; Yes                       ;
+; count_out[1]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.18e-09 V                   ; 2.74 V              ; -0.0527 V           ; 0.162 V                              ; 0.083 V                              ; 2.61e-10 s                  ; 2.44e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.18e-09 V                  ; 2.74 V             ; -0.0527 V          ; 0.162 V                             ; 0.083 V                             ; 2.61e-10 s                 ; 2.44e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[2]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.18e-09 V                   ; 2.74 V              ; -0.0527 V           ; 0.162 V                              ; 0.083 V                              ; 2.61e-10 s                  ; 2.44e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.18e-09 V                  ; 2.74 V             ; -0.0527 V          ; 0.162 V                             ; 0.083 V                             ; 2.61e-10 s                 ; 2.44e-10 s                 ; Yes                       ; Yes                       ;
+; count_out[3]  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.18e-09 V                   ; 2.74 V              ; -0.0527 V           ; 0.162 V                              ; 0.083 V                              ; 2.61e-10 s                  ; 2.44e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.18e-09 V                  ; 2.74 V             ; -0.0527 V          ; 0.162 V                             ; 0.083 V                             ; 2.61e-10 s                 ; 2.44e-10 s                 ; Yes                       ; Yes                       ;
+; serOut        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.24e-09 V                   ; 2.76 V              ; -0.0537 V           ; 0.17 V                               ; 0.079 V                              ; 2.61e-10 s                  ; 2.39e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.24e-09 V                  ; 2.76 V             ; -0.0537 V          ; 0.17 V                              ; 0.079 V                             ; 2.61e-10 s                 ; 2.39e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.87e-09 V                   ; 2.79 V              ; -0.0524 V           ; 0.19 V                               ; 0.066 V                              ; 2.63e-10 s                  ; 1.96e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.87e-09 V                  ; 2.79 V             ; -0.0524 V          ; 0.19 V                              ; 0.066 V                             ; 2.63e-10 s                 ; 1.96e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.91e-09 V                   ; 2.73 V              ; -0.0159 V           ; 0.231 V                              ; 0.026 V                              ; 2.89e-10 s                  ; 4.54e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.91e-09 V                  ; 2.73 V             ; -0.0159 V          ; 0.231 V                             ; 0.026 V                             ; 2.89e-10 s                 ; 4.54e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 66       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 66       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 21    ; 21   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 7     ; 7    ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; clkPB      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; serIn      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                           ;
++--------------+---------------------------------------------------------------------------------------+
+; Output Port  ; Comment                                                                               ;
++--------------+---------------------------------------------------------------------------------------+
+; count_out[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; count_out[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; count_out[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; count_out[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; serOut       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; serOutvalid  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++--------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; clkPB      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; serIn      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                           ;
++--------------+---------------------------------------------------------------------------------------+
+; Output Port  ; Comment                                                                               ;
++--------------+---------------------------------------------------------------------------------------+
+; count_out[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; count_out[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; count_out[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; count_out[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; serOut       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; serOutvalid  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++--------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Tue Jun 02 20:10:00 2026
+Info: Command: quartus_sta 3 -c 3
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 125 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: '3.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 125C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.242
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.242              -9.457 clk 
+Info (332146): Worst-case hold slack is 0.410
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.410               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -19.357 clk 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Slow 1200mV -40C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.931
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.931              -6.767 clk 
+Info (332146): Worst-case hold slack is 0.328
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.328               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -17.135 clk 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Fast 1200mV -40C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.020
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.020              -0.054 clk 
+Info (332146): Worst-case hold slack is 0.171
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.171               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -14.747 clk 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 1
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 0.628 ns
+    Info (332114): 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4860 megabytes
+    Info: Processing ended: Tue Jun 02 20:10:02 2026
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

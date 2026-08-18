@@ -1,0 +1,16 @@
+D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3.vo {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module topLevel
+-- Compiling module hard_block
+
+Top level modules:
+	topLevel
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module topLevelTB
+
+Top level modules:
+	topLevelTB
+
+} {} {}}

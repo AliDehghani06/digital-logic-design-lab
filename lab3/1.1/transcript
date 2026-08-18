@@ -1,0 +1,140 @@
+# Compile of serialTransmitter.v failed with 6 errors.
+# Compile of serialTransmitterTB.v was successful.
+# 2 compiles, 1 failed with 6 errors.
+# Compile of serialTransmitter.v was successful.
+vsim -gui work.serialTransmitterTB
+# vsim -gui work.serialTransmitterTB 
+# Start time: 19:07:24 on Jun 02,2026
+# Loading work.serialTransmitterTB
+# ** Error: (vsim-3033) Instantiation of 'SerialTransmitter_Top' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /serialTransmitterTB File: D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v Line: 10
+#         Searched libraries:
+#             D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/work
+# Error loading design
+# End time: 19:07:25 on Jun 02,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 6
+# Compile of serialTransmitterTB.v was successful.
+vsim -gui work.serialTransmitterTB
+# vsim -gui work.serialTransmitterTB 
+# Start time: 19:08:22 on Jun 02,2026
+# Loading work.serialTransmitterTB
+# Loading work.serialTransmitter
+# Loading work.counter9
+# Loading work.sequenceDetector
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'counter_inst'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /serialTransmitterTB/serial_inst/counter_inst File: D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitter.v Line: 62
+# ** Warning: (vsim-3722) D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitter.v(62): [TFMPC] - Missing connection for port 'clkEn'.
+add wave -position insertpoint sim:/serialTransmitterTB/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v(52)
+#    Time: 1340 ns  Iteration: 0  Instance: /serialTransmitterTB
+# Break in Module serialTransmitterTB at D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v line 52
+# Compile of serialTransmitter.v was successful.
+# Compile of serialTransmitterTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.serialTransmitterTB
+# End time: 19:36:19 on Jun 02,2026, Elapsed time: 0:27:57
+# Errors: 0, Warnings: 5
+# vsim -gui work.serialTransmitterTB 
+# Start time: 15:06:19 on Jun 02,2026
+# Loading work.serialTransmitterTB
+# Loading work.serialTransmitter
+# Loading work.counter9
+# Loading work.sequenceDetector
+add wave -position insertpoint sim:/serialTransmitterTB/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v(57)
+#    Time: 1580 ns  Iteration: 0  Instance: /serialTransmitterTB
+# Break in Module serialTransmitterTB at D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v line 57
+quit -sim
+# End time: 15:08:15 on Jun 02,2026, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 1
+# Compile of serialTransmitterTB.v was successful.
+vsim -gui work.serialTransmitterTB
+# vsim -gui work.serialTransmitterTB 
+# Start time: 15:08:25 on Jun 02,2026
+# Loading work.serialTransmitterTB
+# Loading work.serialTransmitter
+# Loading work.counter9
+# Loading work.sequenceDetector
+add wave -position insertpoint sim:/serialTransmitterTB/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v(57)
+#    Time: 1340 ns  Iteration: 0  Instance: /serialTransmitterTB
+# Break in Module serialTransmitterTB at D:/University/Semester4/DLDLab/HWs/3/Codes/1.2/serialTransmitterTB.v line 57
+quit -sim
+# End time: 16:17:18 on Jun 02,2026, Elapsed time: 1:08:53
+# Errors: 0, Warnings: 2
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project 2
+# Compile of circuitTB.v was successful.
+# Compile of onePulser.v was successful.
+# Compile of serialTransmitter.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.circuitTB
+# vsim -gui work.circuitTB 
+# Start time: 16:32:15 on Jun 02,2026
+# Loading work.circuitTB
+# Loading work.onePulser
+# Loading work.serialTransmitter
+# Loading work.counter9
+# Loading work.sequenceDetector
+add wave -position insertpoint sim:/circuitTB/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/3/Codes/2/circuitTB.v(64)
+#    Time: 8525 ns  Iteration: 0  Instance: /circuitTB
+# Break in Module circuitTB at D:/University/Semester4/DLDLab/HWs/3/Codes/2/circuitTB.v line 64
+quit -sim
+# End time: 20:14:38 on Jun 02,2026, Elapsed time: 3:42:23
+# Errors: 0, Warnings: 5
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project 3
+# Compile of 3.vo was successful.
+# Compile of topLevelTB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.topLevelTB -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3_v.sdo
+# vsim -gui work.topLevelTB -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3_v.sdo" 
+# Start time: 20:16:58 on Jun 02,2026
+# Loading work.topLevelTB
+# ** Error: (vsim-3033) Instantiation of 'transmitter_top' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /topLevelTB File: D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v Line: 14
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cycloneive
+#             D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/work
+# Error loading design
+# End time: 20:17:00 on Jun 02,2026, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 5
+# Compile of topLevelTB.v was successful.
+vsim -gui -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3_v.sdo work.topLevelTB
+# vsim -gui -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3_v.sdo" work.topLevelTB 
+# Start time: 20:18:26 on Jun 02,2026
+# Loading work.topLevelTB
+# Loading work.topLevel
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3_v.sdo
+# Loading instances from 3_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/3_v.sdo
+# Loading timing data from 3_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /topLevelTB File: D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v
+add wave -position insertpoint sim:/topLevelTB/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v(71)
+#    Time: 10450 ns  Iteration: 0  Instance: /topLevelTB
+# Break in Module topLevelTB at D:/University/Semester4/DLDLab/HWs/3/Codes/3/modelsim/topLevelTB.v line 71
+quit -sim
+# End time: 20:39:54 on Jun 02,2026, Elapsed time: 0:21:28
+# Errors: 0, Warnings: 2
+# Compile of topLevelTB.v was successful.
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini

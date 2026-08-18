@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vonePulser
+!s110 1780384852
+!i10b 1
+!s100 A@[QP5bz1ggCJBdGVY[Fl0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]15G?bO29[GjQ:5?lgXmS1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/University/Semester4/DLDLab/HWs/3/Codes/1.1
+w1780384548
+8D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulser.v
+FD:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulser.v
+!i122 0
+L0 1 15
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1780384852.000000
+!s107 D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulser.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulser.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+none@pulser
+vonePulserTB
+!s110 1780384900
+!i10b 1
+!s100 _`FdAY:5Q?^D]0XKabPIg1
+R0
+IjlIe_5FT1WiNO1UakF@`E3
+R1
+R2
+w1780384881
+8D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulserTB.v
+FD:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulserTB.v
+!i122 2
+L0 3 31
+R3
+r1
+!s85 0
+31
+!s108 1780384900.000000
+!s107 D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulserTB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/3/Codes/1.1/onePulserTB.v|
+!i113 1
+R4
+R5
+none@pulser@t@b
