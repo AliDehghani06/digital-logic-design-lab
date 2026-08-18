@@ -1,0 +1,46 @@
+D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB_Function_Generator_Full
+
+Top level modules:
+	TB_Function_Generator_Full
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/3/waveformGenerator.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/3/waveformGenerator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Waveform_Generator
+
+Top level modules:
+	Waveform_Generator
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/3/amplitudeSelector.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/3/amplitudeSelector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module amp_sel
+
+Top level modules:
+	amp_sel
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/3/frequencySelector.v {1 {vlog -work work -stats=none {D:\University\Semester4\DLDLab\HWs\4\Codes\3\frequencySelector.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module freq_sel
+
+Top level modules:
+	freq_sel
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/3/DDS.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/3/DDS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sine_rom
+-- Compiling module datapath_ph
+-- Compiling module controller_ph
+-- Compiling module dds
+
+Top level modules:
+	dds
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/3/functionGenerator.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/3/functionGenerator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Function_Generator
+
+Top level modules:
+	Function_Generator
+
+} {} {}}

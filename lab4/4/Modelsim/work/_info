@@ -1,0 +1,174 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/University/Semester4/DLDLab/HWs/4/Codes/3
+vcontroller_ph
+Z0 !s110 1782067949
+!i10b 1
+!s100 F8zVW3j3@7<16[TP5>SDa0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_k2Cnd>Zj3NA:z?k]QYSH0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim
+Z4 w1781945390
+Z5 8D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/DDS.v
+Z6 FD:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/DDS.v
+!i122 1
+L0 37 17
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1782067949.000000
+Z9 !s107 D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/DDS.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/DDS.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vdatapath_ph
+R0
+!i10b 1
+!s100 [5UjKMU3RNAe5d0Co2SY`1
+R1
+IXH0:C:8zA_>b9FOeNMIdW2
+R2
+R3
+R4
+R5
+R6
+!i122 1
+L0 18 18
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdds
+R0
+!i10b 1
+!s100 e5KlY4a37V0URL0hXYT]g1
+R1
+I<Sm:V^aJf=4l<T_B`J[mi0
+R2
+R3
+R4
+R5
+R6
+!i122 1
+L0 55 38
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vhard_block
+R0
+!i10b 1
+!s100 ?[J5iJ@ZC_kUG@bHK_EAe3
+R1
+IMA><o3Gi1;l;??E:dQ?lE0
+R2
+R3
+Z13 w1782067402
+Z14 8D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/4.vo
+Z15 FD:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/4.vo
+!i122 0
+L0 5300 34
+R7
+r1
+!s85 0
+31
+Z16 !s108 1782067948.000000
+Z17 !s107 D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/4.vo|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/4.vo|
+!i113 1
+R11
+R12
+vsine_rom
+R0
+!i10b 1
+!s100 f7UVhM<_NnL_7TFP5cJj32
+R1
+IGNm`Uf:<:iEogFSn3`gVS0
+R2
+R3
+R4
+R5
+R6
+!i122 1
+L0 1 16
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vTB_top
+R0
+!i10b 1
+!s100 2UFLPo;C<meEfX]DBC=Ej0
+R1
+Id^[S4Ri><FCMe0dPAZED<3
+R2
+R3
+w1782067881
+8D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/TB_Top.v
+FD:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/TB_Top.v
+!i122 2
+L0 3 52
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/TB_Top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/TB_Top.v|
+!i113 1
+R11
+R12
+n@t@b_top
+vTop
+!s110 1782067948
+!i10b 1
+!s100 Njga3]MYn^B[]gJb9?kC82
+R1
+ImIMGRQj]iR]RF;NJSYBie1
+R2
+R3
+R13
+R14
+R15
+!i122 0
+L0 32 5267
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R11
+R12
+n@top

@@ -1,0 +1,17 @@
+# Compile of frequencySelector.v was successful.
+# Compile of TB_FS.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_freq_sel
+# vsim -gui work.tb_freq_sel 
+# Start time: 12:43:01 on Jun 20,2026
+# Loading work.tb_freq_sel
+# Loading work.freq_sel
+add wave -position insertpoint sim:/tb_freq_sel/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/1.2/TB_FS.v(53)
+#    Time: 30110 ns  Iteration: 0  Instance: /tb_freq_sel
+# Break in Module tb_freq_sel at D:/University/Semester4/DLDLab/HWs/4/Codes/1.2/TB_FS.v line 53
+quit -sim
+# End time: 13:14:44 on Jun 20,2026, Elapsed time: 0:31:43
+# Errors: 0, Warnings: 5
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini

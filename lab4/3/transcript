@@ -1,0 +1,195 @@
+# 0 compiles, 3 failed with no errors.
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project 3
+# Compile of waveformGenerator.v was successful.
+# Load canceled
+# Compile of TB_FG.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:16:16 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 30050 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of TB_FG.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:17:30 on Jun 21,2026, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 5
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:17:30 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 210050 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of frequencySelector.v was successful.
+# Compile of TB_FG.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:19:08 on Jun 21,2026, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 3
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:19:08 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 210050 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of amplitudeSelector.v was successful.
+# Compile of DDS.v was successful.
+# Compile of frequencySelector.v was successful.
+# Compile of functionGenerator.v was successful.
+# Compile of TB_FG.v was successful.
+# Compile of waveformGenerator.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:20:41 on Jun 21,2026, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 2
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:20:41 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 210050 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of TB_FG.v was successful.
+# Load canceled
+# Compile of frequencySelector.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:23:35 on Jun 21,2026, Elapsed time: 0:02:54
+# Errors: 0, Warnings: 3
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:23:35 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 240100 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of waveformGenerator.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:25:25 on Jun 21,2026, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 2
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:25:25 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 240100 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of TB_FG.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:27:04 on Jun 21,2026, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 2
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:27:04 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 960100 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of TB_FG.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:28:39 on Jun 21,2026, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 2
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:28:39 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(37)
+#    Time: 560100 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 37
+# Compile of TB_FG.v was successful.
+vsim -gui work.TB_Function_Generator_Full
+# End time: 21:29:52 on Jun 21,2026, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 2
+# vsim -gui work.TB_Function_Generator_Full 
+# Start time: 21:29:52 on Jun 21,2026
+# Loading work.TB_Function_Generator_Full
+# Loading work.Function_Generator
+# Loading work.freq_sel
+# Loading work.dds
+# Loading work.datapath_ph
+# Loading work.controller_ph
+# Loading work.sine_rom
+# Loading work.Waveform_Generator
+# Loading work.amp_sel
+add wave -position insertpoint sim:/TB_Function_Generator_Full/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v(38)
+#    Time: 560100 ns  Iteration: 0  Instance: /TB_Function_Generator_Full
+# Break in Module TB_Function_Generator_Full at D:/University/Semester4/DLDLab/HWs/4/Codes/3/TB_FG.v line 38
+quit -sim
+# End time: 22:21:43 on Jun 21,2026, Elapsed time: 0:51:51
+# Errors: 0, Warnings: 1

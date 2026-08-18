@@ -1,0 +1,15 @@
+D:/University/Semester4/DLDLab/HWs/4/Codes/1.2/TB_FS.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/1.2/TB_FS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_freq_sel
+
+Top level modules:
+	tb_freq_sel
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/1.2/frequencySelector.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/1.2/frequencySelector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module freq_sel
+
+Top level modules:
+	freq_sel
+
+} {} {}}

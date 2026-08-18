@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clken",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[8]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[7]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[6]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpWave[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpSel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AmpSel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DDS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "init",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "PI[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PI[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PI[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PI[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PI[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

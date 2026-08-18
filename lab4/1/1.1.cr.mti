@@ -1,0 +1,25 @@
+D:/University/Semester4/DLDLab/HWs/4/Codes/1.1/waveformGenerator.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/1.1/waveformGenerator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Waveform_Generator
+
+Top level modules:
+	Waveform_Generator
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/1.1/DDS.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/1.1/DDS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sine_rom
+-- Compiling module datapath_ph
+-- Compiling module controller_ph
+-- Compiling module dds
+
+Top level modules:
+	dds
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/1.1/circuit_tb.v {1 {vlog -work work -stats=none {D:\University\Semester4\DLDLab\HWs\4\Codes\1.1\circuit_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB_Function_Generator
+
+Top level modules:
+	TB_Function_Generator
+
+} {} {}}

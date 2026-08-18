@@ -1,0 +1,26 @@
+D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/TB_Top.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/TB_Top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB_top
+
+Top level modules:
+	TB_top
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/DDS.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/DDS.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sine_rom
+-- Compiling module datapath_ph
+-- Compiling module controller_ph
+-- Compiling module dds
+
+Top level modules:
+	dds
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/4.vo {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/4/Codes/4/Modelsim/4.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Top
+-- Compiling module hard_block
+
+Top level modules:
+	Top
+
+} {} {}}
