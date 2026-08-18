@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vlm_555_timer
+!s110 1779642803
+!i10b 1
+!s100 TYWh]J;^lO3T7LH;:S>C80
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ia73=^S;cCk9X6eMgY;jIk3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A
+w1777023558
+8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer.v
+FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer.v
+!i122 0
+L0 3 59
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1779642803.000000
+!s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vlm_555_timer_TB
+!s110 1779643433
+!i10b 1
+!s100 MYWS_=Vo;o`WYQVMfDNGP0
+R0
+IASZ_h:TJz`^nCo0zF_MFH2
+R1
+R2
+w1779643430
+8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v
+FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v
+!i122 5
+L0 3 33
+R3
+r1
+!s85 0
+31
+!s108 1779643433.000000
+!s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v|
+!i113 1
+R4
+R5
+nlm_555_timer_@t@b

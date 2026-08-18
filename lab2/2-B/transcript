@@ -1,0 +1,117 @@
+# Compile of 3-A.vo was successful.
+# Compile of ringOscillator.v was successful.
+# Compile of frequencyDivider_TB.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of frequencyDivider_TB.v was successful.
+# Load canceled
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui work.frequencyDivider_TB -L cycloneive_ver -L altera_ver
+# vsim -gui work.frequencyDivider_TB -L cycloneive_ver -L altera_ver 
+# Start time: 02:15:15 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# ** Error: (vsim-3063) Port 'ring_nodes' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB/u_ring File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v Line: 13
+# Loading altera_ver.PRIM_GDFF_LOW
+# Error loading design
+# End time: 02:15:16 on May 25,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 8
+vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB
+# vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB 
+# Start time: 02:15:29 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# ** Error: (vsim-3063) Port 'ring_nodes' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB/u_ring File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v Line: 13
+# Loading altera_ver.PRIM_GDFF_LOW
+# Error loading design
+# End time: 02:15:30 on May 25,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB
+# vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB 
+# Start time: 02:18:21 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v(38)
+#    Time: 250500 ps  Iteration: 0  Instance: /frequencyDivider_TB
+# Break in Module frequencyDivider_TB at D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v line 38
+quit -sim
+# End time: 02:31:56 on May 25,2026, Elapsed time: 0:13:35
+# Errors: 0, Warnings: 2
+# Compile of frequencyDivider_TB.v was successful.
+# Compile of ringOscillator.v was successful.
+vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB
+# vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB 
+# Start time: 02:32:16 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v(38)
+#    Time: 250500 ps  Iteration: 0  Instance: /frequencyDivider_TB
+# Break in Module frequencyDivider_TB at D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v line 38
+quit -sim
+# End time: 02:44:43 on May 25,2026, Elapsed time: 0:12:27
+# Errors: 0, Warnings: 3
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB
+# vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB 
+# Start time: 02:45:10 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v(40)
+#    Time: 250600 ps  Iteration: 0  Instance: /frequencyDivider_TB
+# Break in Module frequencyDivider_TB at D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v line 40

@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Setup 'UPclk'
+Slack : -15.460
+TNS   : -193.825
+
+Type  : Slow 1200mV 125C Model Setup 'rst'
+Slack : -12.908
+TNS   : -89.012
+
+Type  : Slow 1200mV 125C Model Hold 'UPclk'
+Slack : -3.255
+TNS   : -18.106
+
+Type  : Slow 1200mV 125C Model Hold 'rst'
+Slack : -2.839
+TNS   : -10.630
+
+Type  : Slow 1200mV 125C Model Recovery 'UPclk'
+Slack : -12.978
+TNS   : -94.933
+
+Type  : Slow 1200mV 125C Model Recovery 'rst'
+Slack : -10.272
+TNS   : -67.058
+
+Type  : Slow 1200mV 125C Model Removal 'UPclk'
+Slack : -4.107
+TNS   : -23.493
+
+Type  : Slow 1200mV 125C Model Removal 'rst'
+Slack : -3.204
+TNS   : -13.870
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'UPclk'
+Slack : -5.484
+TNS   : -160.387
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'rst'
+Slack : -3.000
+TNS   : -37.742
+
+Type  : Slow 1200mV -40C Model Setup 'UPclk'
+Slack : -13.807
+TNS   : -167.473
+
+Type  : Slow 1200mV -40C Model Setup 'rst'
+Slack : -11.608
+TNS   : -79.460
+
+Type  : Slow 1200mV -40C Model Hold 'UPclk'
+Slack : -2.895
+TNS   : -16.485
+
+Type  : Slow 1200mV -40C Model Hold 'rst'
+Slack : -2.404
+TNS   : -8.753
+
+Type  : Slow 1200mV -40C Model Recovery 'UPclk'
+Slack : -11.317
+TNS   : -82.947
+
+Type  : Slow 1200mV -40C Model Recovery 'rst'
+Slack : -9.042
+TNS   : -58.628
+
+Type  : Slow 1200mV -40C Model Removal 'UPclk'
+Slack : -3.595
+TNS   : -21.459
+
+Type  : Slow 1200mV -40C Model Removal 'rst'
+Slack : -2.808
+TNS   : -12.238
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'UPclk'
+Slack : -4.751
+TNS   : -139.317
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'rst'
+Slack : -3.000
+TNS   : -29.982
+
+Type  : Fast 1200mV -40C Model Setup 'UPclk'
+Slack : -7.395
+TNS   : -81.175
+
+Type  : Fast 1200mV -40C Model Setup 'rst'
+Slack : -6.250
+TNS   : -39.932
+
+Type  : Fast 1200mV -40C Model Hold 'UPclk'
+Slack : -1.513
+TNS   : -8.322
+
+Type  : Fast 1200mV -40C Model Hold 'rst'
+Slack : -1.351
+TNS   : -5.231
+
+Type  : Fast 1200mV -40C Model Recovery 'UPclk'
+Slack : -6.043
+TNS   : -44.082
+
+Type  : Fast 1200mV -40C Model Recovery 'rst'
+Slack : -4.739
+TNS   : -29.604
+
+Type  : Fast 1200mV -40C Model Removal 'UPclk'
+Slack : -1.889
+TNS   : -10.336
+
+Type  : Fast 1200mV -40C Model Removal 'rst'
+Slack : -1.419
+TNS   : -5.950
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'UPclk'
+Slack : -3.000
+TNS   : -79.973
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'rst'
+Slack : -3.000
+TNS   : -24.720
+
+------------------------------------------------------------

@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-B/Modelsim
+vfrequencyDivider
+Z0 !s110 1779740516
+!i10b 1
+!s100 ?C2em_@Ic;3`GAz]OAM7V0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYMhX;l__=lnP;ZJAP5TO[1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim
+Z4 w1779739931
+Z5 8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C.vo
+Z6 FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C.vo
+!i122 0
+L0 32 2139
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1779740516.000000
+Z9 !s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+nfrequency@divider
+vfrequencyDivider_TB
+!s110 1779740604
+!i10b 1
+!s100 15hNQIUgKeR@7Tg1m2RXd2
+R1
+IMdXkCA[5JFA]R[zYI34hM1
+R2
+R3
+w1779740589
+8D:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-C\Modelsim\frequencyDivider_TB.v
+FD:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-C\Modelsim\frequencyDivider_TB.v
+!i122 3
+L0 3 49
+R7
+r1
+!s85 0
+31
+!s108 1779740604.000000
+!s107 D:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-C\Modelsim\frequencyDivider_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-C\Modelsim\frequencyDivider_TB.v|
+!i113 1
+R11
+R12
+nfrequency@divider_@t@b
+vhard_block
+R0
+!i10b 1
+!s100 ngI5gHIWZCCVOd:?R1RXe1
+R1
+I0O=QSb`J2@IiA=Ke3jQIF3
+R2
+R3
+R4
+R5
+R6
+!i122 0
+L0 2172 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vringOscillator
+R0
+!i10b 1
+!s100 2`0<BnR0<jB;=<4n@DmHN1
+R1
+I9zezlWd[nMf9YI@MkBC`O1
+R2
+R3
+w1779663683
+8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/ringOscillator.v
+FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/ringOscillator.v
+!i122 2
+L0 3 20
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/ringOscillator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/ringOscillator.v|
+!i113 1
+R11
+R12
+nring@oscillator

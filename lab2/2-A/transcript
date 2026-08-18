@@ -1,0 +1,38 @@
+vsim -gui work.lm_555_timer_TB
+# vsim -gui work.lm_555_timer_TB 
+# Start time: 20:57:50 on May 24,2026
+# Loading work.lm_555_timer_TB
+# Loading work.lm_555_timer
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_1k/*
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_10k/*
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_100k/*
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_1k/*
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_10k/*
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_100k/*
+run -all
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v(32)
+#    Time: 500010 us  Iteration: 0  Instance: /lm_555_timer_TB
+# Break in Module lm_555_timer_TB at D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v line 32
+quit -sim
+# End time: 21:00:15 on May 24,2026, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 1
+vsim -gui work.lm_555_timer_TB
+# vsim -gui work.lm_555_timer_TB 
+# Start time: 21:00:20 on May 24,2026
+# Loading work.lm_555_timer_TB
+# Loading work.lm_555_timer
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_1k/*
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_10k/*
+add wave -position insertpoint sim:/lm_555_timer_TB/uut_100k/*
+run
+run
+run
+quit -sim
+# End time: 22:54:30 on May 24,2026, Elapsed time: 1:54:10
+# Errors: 0, Warnings: 1

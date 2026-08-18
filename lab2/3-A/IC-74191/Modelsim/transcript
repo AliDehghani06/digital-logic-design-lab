@@ -1,0 +1,50 @@
+# Compile of 3-A.vo was successful.
+# Compile of ringOscillator.v was successful.
+# Compile of frequencyDivider_TB.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.frequencyDivider_TB -L cycloneive_ver -L altera_ver
+# vsim -gui work.frequencyDivider_TB -L cycloneive_ver -L altera_ver 
+# Start time: 02:46:44 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v(40)
+#    Time: 250600 ps  Iteration: 0  Instance: /frequencyDivider_TB
+# Break in Module frequencyDivider_TB at D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v line 40
+quit -sim
+# End time: 02:56:40 on May 25,2026, Elapsed time: 0:09:56
+# Errors: 0, Warnings: 2
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB
+# vsim -gui -L cycloneive_ver -L altera_ver work.frequencyDivider_TB 
+# Start time: 02:57:10 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# ** Note: $stop    : D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v(38)
+#    Time: 250500 ps  Iteration: 0  Instance: /frequencyDivider_TB
+# Break in Module frequencyDivider_TB at D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v line 38
+# End time: 04:20:51 on May 25,2026, Elapsed time: 1:23:41
+# Errors: 0, Warnings: 2

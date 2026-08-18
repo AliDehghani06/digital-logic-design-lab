@@ -1,0 +1,174 @@
+vsim -gui work.frequencyDivider_TB -L altera_ver -L cycloneive_ver
+# vsim -gui work.frequencyDivider_TB -L altera_ver -L cycloneive_ver 
+# Start time: 21:37:05 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+#############  Autofindloop Analysis  ###############
+#############  Loop found at time 73267 ps ###############
+#   Active process: /frequencyDivider_TB/uut/\inst4|27 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 0
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:1194
+#   Active process: /frequencyDivider_TB/uut/\inst3|4 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 0
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:1060
+#   Active process: /frequencyDivider_TB/uut/\inst4|91 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 0
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:973
+#   Active process: /frequencyDivider_TB/uut/\inst1|27 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 0
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:869
+#   Active process: /frequencyDivider_TB/uut/\inst4|94 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 0
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:772
+#   Active process: /frequencyDivider_TB/uut/\inst1|91 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 0
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:702
+#       Signal: /frequencyDivider_TB/uut/\inst4|23~_emulated /q_tmp @ sub-iteration 1 at Value St1 ($MODEL_TECH/../altera/verilog/src/altera_primitives.v:273)
+#       Signal: /frequencyDivider_TB/uut/\inst4|26~_emulated /q_tmp @ sub-iteration 1 at Value St1 ($MODEL_TECH/../altera/verilog/src/altera_primitives.v:273)
+#       Signal: /frequencyDivider_TB/uut/\inst1|23~_emulated /q_tmp @ sub-iteration 1 at Value St1 ($MODEL_TECH/../altera/verilog/src/altera_primitives.v:273)
+#   Active process: /frequencyDivider_TB/uut/\div_clk~output /#ASSIGN#6537 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:156
+#   Active process: /frequencyDivider_TB/uut/\div_clk~output /#ASSIGN#6536 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:156
+#   Active process: /frequencyDivider_TB/uut/\inst4|25~2 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:1160
+#   Active process: /frequencyDivider_TB/uut/\inst4|23~2 /#IMPLICIT-WIRE(cout_tmp)#4269 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:1043
+#   Active process: /frequencyDivider_TB/uut/\inst4|24~2 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:939
+#   Active process: /frequencyDivider_TB/uut/\inst4|26~2 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:825
+#   Active process: /frequencyDivider_TB/uut/\inst1|24~2 /#IMPLICIT-WIRE(cout_tmp)#4269 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:624
+#   Active process: /frequencyDivider_TB/uut/\inst1|25~2 /#IMPLICIT-WIRE(cout_tmp)#4269 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:554
+#   Active process: /frequencyDivider_TB/uut/\inst1|26~2 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:457
+#   Active process: /frequencyDivider_TB/uut/\inst1|23~_emulated /#ALWAYS#313 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:736
+#   Active process: /frequencyDivider_TB/uut/\inst4|26~_emulated /#ALWAYS#313 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:806
+#   Active process: /frequencyDivider_TB/uut/\inst4|23~_emulated /#ALWAYS#313 @ sub-iteration 2
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:1024
+#   Active process: /frequencyDivider_TB/uut/\out[5]~output /#ASSIGN#6537 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:195
+#   Active process: /frequencyDivider_TB/uut/\out[5]~output /#ASSIGN#6536 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:195
+#   Active process: /frequencyDivider_TB/uut/\out[6]~output /#ASSIGN#6537 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:182
+#   Active process: /frequencyDivider_TB/uut/\out[6]~output /#ASSIGN#6536 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:182
+#   Active process: /frequencyDivider_TB/uut/\out[4]~output /#ASSIGN#6537 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:208
+#   Active process: /frequencyDivider_TB/uut/\out[4]~output /#ASSIGN#6536 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:208
+#   Active process: /frequencyDivider_TB/uut/\out[0]~output /#ASSIGN#6537 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:260
+#   Active process: /frequencyDivider_TB/uut/\out[0]~output /#ASSIGN#6536 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:260
+#   Active process: /frequencyDivider_TB/uut/\inst4|25~3 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:1124
+#   Active process: /frequencyDivider_TB/uut/\inst4|24~3 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:903
+#   Active process: /frequencyDivider_TB/uut/\inst4|26~3 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:789
+#   Active process: /frequencyDivider_TB/uut/\inst1|21~0 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:641
+#   Active process: /frequencyDivider_TB/uut/\inst1|92 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:571
+#   Active process: /frequencyDivider_TB/uut/\inst1|93 /#IMPLICIT-WIRE(cout_tmp)#4269 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:501
+#   Active process: /frequencyDivider_TB/uut/\inst1|93 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:501
+#   Active process: /frequencyDivider_TB/uut/\inst1|26~3 /#IMPLICIT-WIRE(cout_tmp)#4269 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:421
+#   Active process: /frequencyDivider_TB/uut/\inst1|26~3 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 3
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:421
+#   Active process: /frequencyDivider_TB/uut/\inst1|27 /#IMPLICIT-WIRE(combout_tmp)#4268 @ sub-iteration 4
+#     Source: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo:869
+################# END OF LOOP #################
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 73267 ps.
+quit -sim
+# End time: 21:37:36 on May 25,2026, Elapsed time: 0:00:31
+# Errors: 1, Warnings: 1
+vsim -gui -L altera_ver -L cycloneive_ver work.frequencyDivider_TB -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# vsim -gui -L altera_ver -L cycloneive_ver work.frequencyDivider_TB -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo" 
+# Start time: 21:38:03 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading instances from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+quit -sim
+# End time: 21:41:16 on May 25,2026, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 1
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo work.frequencyDivider_TB
+# vsim -gui -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo" work.frequencyDivider_TB 
+# Start time: 21:41:30 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading instances from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+run
+quit -sim
+# End time: 21:45:44 on May 25,2026, Elapsed time: 0:04:14
+# Errors: 0, Warnings: 2
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo work.frequencyDivider_TB
+# vsim -gui -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo" work.frequencyDivider_TB 
+# Start time: 21:45:57 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading instances from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# End time: 22:36:21 on May 25,2026, Elapsed time: 0:50:24
+# Errors: 0, Warnings: 2
+# Closing project D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.mpf

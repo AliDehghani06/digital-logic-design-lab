@@ -1,0 +1,36 @@
+`timescale 1us/1us
+
+module lm_555_timer_TB;
+
+    reg clk;
+    reg reset;
+
+    wire pulse_1k;
+    wire pulse_10k;
+    wire pulse_100k;
+
+    lm_555_timer #(.Resistor1(1), .Resistor2(1), .capacitor(10)) 
+        uut_1k (.clk(clk), .reset(reset), .pulse(pulse_1k));
+
+    lm_555_timer #(.Resistor1(1), .Resistor2(10), .capacitor(10)) 
+        uut_10k (.clk(clk), .reset(reset), .pulse(pulse_10k));
+
+    lm_555_timer #(.Resistor1(1), .Resistor2(100), .capacitor(10)) 
+        uut_100k (.clk(clk), .reset(reset), .pulse(pulse_100k));
+
+    initial begin
+        clk = 0;
+        forever #0.5 clk = ~clk;
+    end
+
+    initial begin
+        reset = 1;
+        #10;
+        reset = 0;
+        
+        #500000; 
+        $stop;
+    end
+
+endmodule
+

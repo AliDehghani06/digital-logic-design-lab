@@ -1,0 +1,15 @@
+D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-B/ringOscillator.v {1 {vlog -work work -stats=none {D:\University\Semester4\DLDLab\HWs\2\Students\Answer\2-B\ringOscillator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ringOscillator
+
+Top level modules:
+	ringOscillator
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-B/ringOscillator_TB.v {1 {vlog -work work -stats=none {D:\University\Semester4\DLDLab\HWs\2\Students\Answer\2-B\ringOscillator_TB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ringOscillator_TB
+
+Top level modules:
+	ringOscillator_TB
+
+} {} {}}

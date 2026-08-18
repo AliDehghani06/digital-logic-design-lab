@@ -1,0 +1,15 @@
+D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lm_555_timer_TB
+
+Top level modules:
+	lm_555_timer_TB
+
+} {} {}} D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer.v {1 {vlog -work work -stats=none D:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-A/lm_555_timer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module lm_555_timer
+
+Top level modules:
+	lm_555_timer
+
+} {} {}}

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon May 25 22:34:54 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : 3-B
+Top-level Entity Name : frequencyDivider
+Family : Cyclone IV E
+Total logic elements : 40
+    Total combinational functions : 40
+    Dedicated logic registers : 9
+Total registers : 9
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

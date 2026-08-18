@@ -1,0 +1,86 @@
+# Compile of 3-C.vo was successful.
+# Compile of frequencyDivider_TB.v was successful.
+# Compile of ringOscillator.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo work.frequencyDivider_TB
+# vsim -gui -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo" work.frequencyDivider_TB 
+# Start time: 23:52:23 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo
+# Loading instances from 3-C_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo
+# Loading timing data from 3-C_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/frequencyDivider_TB.v
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+quit -sim
+# End time: 23:53:20 on May 25,2026, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 5
+# Compile of frequencyDivider_TB.v was successful.
+vsim -gui -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo work.frequencyDivider_TB
+# vsim -gui -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo" work.frequencyDivider_TB 
+# Start time: 23:53:31 on May 25,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading instances from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo
+# Loading instances from 3-C_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/3-C_v.sdo
+# Loading timing data from 3-C_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-C/Modelsim/frequencyDivider_TB.v
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+quit -sim
+# End time: 00:19:52 on May 26,2026, Elapsed time: 0:26:21
+# Errors: 0, Warnings: 2
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project 3-A
+# Compile of ringOscillator.v was successful.
+vsim -gui -L altera_ver -L cycloneive_ver -sdftyp /uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo work.frequencyDivider_TB
+# vsim -gui -L altera_ver -L cycloneive_ver -sdftyp "/uut=D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo" work.frequencyDivider_TB 
+# Start time: 00:21:20 on May 26,2026
+# Loading work.frequencyDivider_TB
+# Loading work.ringOscillator
+# Loading work.frequencyDivider
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading instances from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /frequencyDivider_TB File: D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v
+add wave -position insertpoint sim:/frequencyDivider_TB/*
+run
+# Compile of ringOscillator.v was successful.
+# End time: 01:25:25 on May 26,2026, Elapsed time: 1:04:05
+# Errors: 0, Warnings: 3

@@ -1,0 +1,129 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/University/Semester4/DLDLab/HWs/2/Students/Answer/2-B
+vfrequencyDivider
+Z0 !s110 1779664569
+!i10b 1
+!s100 2K``0`8ebn2Z4__6<OIec1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUQ3AQNiUj4;`O0XCi=m@?3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim
+Z4 w1779661942
+Z5 8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo
+Z6 FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo
+!i122 8
+L0 32 1039
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1779664569.000000
+Z9 !s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/3-A.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+nfrequency@divider
+vfrequencyDivider_TB
+!s110 1779665210
+!i10b 1
+!s100 ]b:6Id2[GLS[23A=8W]E]2
+R1
+IZeha6CI:4LELga9X6?UX63
+R2
+R3
+w1779665189
+8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v
+FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v
+!i122 11
+L0 3 39
+R7
+r1
+!s85 0
+31
+!s108 1779665210.000000
+!s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/frequencyDivider_TB.v|
+!i113 1
+R11
+R12
+nfrequency@divider_@t@b
+vhard_block
+R0
+!i10b 1
+!s100 kI?aNSaa1`9<:8P3Y3V8T3
+R1
+I[zB0A^jmWOV`^FkY9@mWW3
+R2
+R3
+R4
+R5
+R6
+!i122 8
+L0 1072 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vringOscillator
+R0
+!i10b 1
+!s100 2`0<BnR0<jB;=<4n@DmHN1
+R1
+Id1bHhlT`A6Dj8:nG_PWbh3
+R2
+R3
+w1779663683
+8D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/ringOscillator.v
+FD:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/ringOscillator.v
+!i122 9
+L0 3 20
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/ringOscillator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/University/Semester4/DLDLab/HWs/2/Students/Answer/3-A/Modelsim/ringOscillator.v|
+!i113 1
+R11
+R12
+nring@oscillator
+vtb_freq_divider
+!s110 1779662543
+!i10b 1
+!s100 Ag@MV=1QTi^W[B1BlPO<40
+R1
+I_MD5[WAK08X[m4FHMI;oM3
+R2
+R3
+w1779662536
+8D:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-A\Modelsim\frequencyDivider_TB.v
+FD:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-A\Modelsim\frequencyDivider_TB.v
+!i122 2
+L0 3 41
+R7
+r1
+!s85 0
+31
+!s108 1779662543.000000
+!s107 D:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-A\Modelsim\frequencyDivider_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\University\Semester4\DLDLab\HWs\2\Students\Answer\3-A\Modelsim\frequencyDivider_TB.v|
+!i113 1
+R11
+R12
